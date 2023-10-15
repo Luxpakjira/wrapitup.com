@@ -30,7 +30,7 @@ def redirectPage():
     code = request.args.get('code')
     token_info = sp_oauth.get_access_token(code)
     session[TOKEN_INFO] = token_info
-    return redirect('http://localhost:3000/home')  # Replace with your actual React front-end URL
+    return redirect('http://wrapitup.com/')  # Replace with your actual React front-end URL
 
 
 @app.route('/getUserProfile')
